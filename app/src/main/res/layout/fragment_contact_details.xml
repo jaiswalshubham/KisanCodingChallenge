@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.ContactDetailsFragment">
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header"/>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/border_accent_bg"
+       android:padding="@dimen/_10sdp"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true"
+       android:orientation="vertical">
+       <TextView
+           android:id="@+id/name"
+           android:layout_below="@+id/header"
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/_20sdp"
+           android:layout_margin="@dimen/_10sdp"
+           android:text="Shubham Jaiswal"
+           android:textColor="@color/black"
+           />
+       <TextView
+           android:id="@+id/phone_number"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:gravity="center_horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="@dimen/_10sdp"
+           android:text="+91-8932085430"
+           android:textSize="@dimen/_16sdp"
+           android:textColor="@color/black"
+           />
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/send_btn"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Send Message"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_16sdp"
+        android:background="@drawable/rect_contact_gradient_blue"
+        android:textColor="@color/white"/>
+</RelativeLayout>

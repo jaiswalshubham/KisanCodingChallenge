@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simple Contact App</string>
+    <string name="tab_text_1">Contact List</string>
+    <string name="tab_text_2">Message Sent List</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

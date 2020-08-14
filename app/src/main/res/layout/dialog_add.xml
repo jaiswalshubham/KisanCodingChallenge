@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_grey"
+    android:layout_margin="@dimen/_10sdp">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Small"
+        android:textColorHint="@color/black"
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:hint="Contact Name"
+            android:inputType="text"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:windowSoftInputMode="adjustResize"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Small"
+        android:textColorHint="@color/black"
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/user_contact"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:windowSoftInputMode="adjustResize"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <RelativeLayout
+        android:id="@+id/btnadd"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/rect_contact_gradient_blue"
+        android:layout_gravity="end"
+        android:padding="@dimen/_10sdp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:text="Add Contact"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

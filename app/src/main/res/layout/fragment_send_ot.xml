@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.SendOTPFragment">
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header"/>
+    <TextView
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_below="@+id/header"
+        android:id="@+id/contact_selected"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Selected Contact"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_accent_bg"
+        android:padding="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name"
+            android:layout_below="@+id/header"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Hi your OTP is"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/otp"
+            android:layout_below="@+id/header"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+            android:text="983943"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/contact_selected"
+        android:id="@+id/user_name_layout"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Shubham Jaiswal"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/user_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Number :"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" +918932085430"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/send_btn"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Send"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_16sdp"
+        android:background="@drawable/rect_contact_gradient_blue"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

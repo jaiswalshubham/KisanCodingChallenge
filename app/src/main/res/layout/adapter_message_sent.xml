@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/border_accent_bg"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_height="@dimen/_80sdp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Name :"
+                android:textSize="@dimen/_14sdp"
+
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:text="Shubham Jaiswal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS Sent:"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/message_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:text="Hi ! your OTP is 465743"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Sent:"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:text="15th Jan 2019 2:00 pm"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
