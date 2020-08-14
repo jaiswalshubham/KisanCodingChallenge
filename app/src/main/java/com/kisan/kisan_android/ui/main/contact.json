@@ -1,0 +1,24 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Shubham Jaiswal",
+      "phone": "+918932085430"
+    },
+    {
+      "id": 2,
+      "name": "Shivam Jaiswal",
+      "phone": "+918932825430"
+    },
+    {
+      "id": 3,
+      "name": "Anil Kr. Sahu",
+      "phone": "+917007098911"
+    },
+    {
+      "id": 4,
+      "name": "Aruna Sahu",
+      "phone": "+918604149974"
+    }
+  ]
+}
